@@ -2,7 +2,7 @@ var atticus = ["Atticus", "2405", "47000", 3];
 var jem = ["Jem", "62347", "63500", 4];
 var boo = ["Boo", "11435", "54000", 3];
 var scout = ["Scout", "6243", "74750", 5];
-​
+
 var employees = [atticus, jem, boo, scout];
 function employeeUpdate(x) {
  var empArray = [];
@@ -14,7 +14,7 @@ function employeeUpdate(x) {
  empArray.push(Math.round(income * bonus));
  return empArray;
 }
-​
+
 function calculateBonus(array){
   var bonus = 0;
   if (array[3] <= 2) {
@@ -29,7 +29,7 @@ function calculateBonus(array){
   if(array[3] === 5){
       bonus += 10;
   };
-​
+  
   if(array[1].length === 4){
     bonus += 5;
   };
